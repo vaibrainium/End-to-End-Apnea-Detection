@@ -1,0 +1,39 @@
+[project]
+name = "apnea_detection"
+version = "0.1.0"
+description = "End-to-end sleep apnea detection project"
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [{ name = "vaibrainium" }]
+dependencies = [
+    "numpy",
+    "pandas",
+    "scikit-learn",
+    "matplotlib",
+    "seaborn",
+    "python-dotenv",
+    "python-box",
+    "dvc",
+    "mlflow",
+]
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-dir]
+"" = "src"
+
+[project.optional-dependencies]
+dev = [
+    "pre-commit",
+    "ipython",
+]
+notebook = [
+    "jupyterlab",
+    "notebook",
+    "ipykernel",
+]
