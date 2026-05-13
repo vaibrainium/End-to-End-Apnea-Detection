@@ -1,0 +1,6 @@
+artefacts_root: artifacts
+
+data_ingestion:
+  root_dir: /mnt/dreamt/
+  raw_data_dir: /mnt/dreamt/compiled
+  ingested_dir: /mnt/dreamt/ingested
